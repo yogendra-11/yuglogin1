@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login #10</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      width: 100%;
+      max-width: 380px;
+      color: #fff;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .login-container p {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #e0e0e0;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    .login-container input::placeholder {
+      color: #ddd;
+    }
+
+    .password-wrapper {
+      position: relative;
+    }
+
+    .password-wrapper span {
+      position: absolute;
+      right: 14px;
+      top: 11px;
+      font-size: 18px;
+      cursor: pointer;
+      color: #ccc;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #f8b4cc;
+      border: none;
+      border-radius: 10px;
+      color: #222;
+      font-weight: 600;
+      margin-top: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .login-container button:hover {
+      background-color: #f296bb;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    .options input {
+      margin-right: 6px;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 25px 0 15px;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    .social-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-buttons button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: white;
+      color: #000;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .social-buttons button:hover {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login Page</h2>
+    <p>Have an account?</p>
+
+    <form>
+      <input type="text" placeholder="Username">
+
+      <div class="password-wrapper">
+        <input type="password" placeholder="Password">
+        <span>👁️</span>
+      </div>
+
+      <button type="submit">SIGN IN</button>
+
+      <div class="options">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="#" style="color:#ccc;">Forgot Password</a>
+      </div>
+
+      <div class="divider">— Or Sign In With —</div>
+
+      <div class="social-buttons">
+        <button>Facebook</button>
+        <button>Twitter</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
